@@ -1,0 +1,49 @@
+@import '../styles/variables/variables';
+@import url('https://fonts.googleapis.com/css?family=Yellowtail&display=swap');
+
+h1 {
+  color: $tasks-orange;
+  font-size: 162px;
+  font-family: 'Yellowtail', cursive;
+  margin: 10%;
+}
+
+.add-task {
+  margin-top: 3%;
+  width: 200px;
+  height: 42px;
+  font-size: 18px;
+}
+
+.tasks-container {
+  // background-color: white;
+  margin-top: 3%;
+  border-radius: 12px;
+  height: auto;
+  width: 75%;
+}
+
+@media screen and (max-width: 599px) {
+  h1 {
+    color: $tasks-orange;
+    font-size: 122px;
+    font-family: 'Yellowtail', cursive;
+    margin-top: 15%;
+  }
+
+  .add-task {
+    margin-top: 13%;
+    width: 200px;
+    height: 42px;
+    font-size: 18px;
+
+  }
+
+  .tasks-container {
+    // background-color: white;
+    // margin-top: 3%;
+    border-radius: 12px;
+    height: auto;
+    width: 75%;
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../styles/variables/variables';
+
+.container {
+
+  // border: solid black 1px;
+  border-radius: 12px;
+  width: 350px;
+  min-height: 250px;
+
+  mat-card-title {
+    text-align: center;
+    margin: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .task {
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin: 5px;
+    padding: 3px 10px;
+    cursor: pointer;
+
+    p {
+      margin: 2px;
+    }
+  }
+
+  button {
+    background-color: $tasks-orange;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+
+    // border: solid black 1px;
+    border-radius: 12px;
+    width: 300px;
+    min-height: 150px;
+    margin-bottom: 5px;
+  }
+
+  mat-icon {
+    transform: rotate(90deg);
+  }
+}

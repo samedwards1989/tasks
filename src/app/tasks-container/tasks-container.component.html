@@ -1,0 +1,17 @@
+<mat-card class="container">
+  <mat-card-title>{{ title }}</mat-card-title>
+
+  <mat-card-content>
+    <ng-container *ngFor="let task of tasks; let i = index">
+      <div class="task" fxLayout="row" fxLayoutAlign="space-between center">
+        <p>{{ task.title }}</p>
+        <button mat-icon-button *ngIf="!done" (click)="moveTask(task)">
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+        <button mat-icon-button *ngIf="done" (click)="remove(i)">
+          <mat-icon>clear</mat-icon>
+        </button>
+      </div>
+    </ng-container>
+  </mat-card-content>
+</mat-card>
